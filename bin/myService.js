@@ -44,5 +44,6 @@ function run(){
     fs.exists(thisPath,fileCheck);
   };
   http.createServer(createCallback).listen(config.port,config.hostname);
+  console.log("http://"+"localhost:"+config.port+" is open");
 }
 exports.run=run;
