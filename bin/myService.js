@@ -12,6 +12,7 @@ function run(){
   var createCallback=function(req,res){
     var thisPath=config.hostDir+url.parse(req.url).pathname;
     var thisFile=path.basename(req.url);
+    //if(thisFile==="favicon.ico") return false;
     var thisMime=mime.lookup(path.basename(thisFile).slice(1));
     var fileCheck=function(has){
       if(has){
@@ -40,7 +41,6 @@ function run(){
       }
     };
     //console.log(thisPath);
-    if(thisFile==="favicon.ico") return false;
     fs.exists(thisPath,fileCheck);
   };
   http.createServer(createCallback).listen(config.port,config.hostname);
