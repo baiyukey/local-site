@@ -4,6 +4,7 @@
 module.exports={
   'hostname':'localhost',
   'port':2999,
-  'hostDir':'D:/www/node/public',
+  'templateDir':'D:/www/node/public/byAdmin/template/',
+  'mediaDir':'D:/www/node/public/byAdmin/',
   'apiDir':'D:/www/node/api/'
 };

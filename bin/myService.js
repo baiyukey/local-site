@@ -10,12 +10,13 @@ function run(){
   var mime=require("mime");
   var runRoute=require('./runRoute');
   var createCallback=function(req,res){
-    var thisPath=config.hostDir+url.parse(req.url).pathname;
-    var thisFile=path.basename(req.url);
+    var thisPath=config.templateDir+url.parse(req.url).pathname;
+    if(url.parse(req.url).pathname.split("/")[1]==="media") thisPath=config.mediaDir+url.parse(req.url).pathname;
     //if(thisFile==="favicon.ico") return false;
-    var thisMime=mime.lookup(path.basename(thisFile).slice(1));
     var fileCheck=function(has){
       if(has){
+        var thisFile=path.basename(req.url);
+        var thisMime=mime.lookup(path.basename(thisFile).slice(1));
         var readCallback=function(err,file){
           if(!err){
             res.writeHead(200,{"Content-Type":thisMime});
