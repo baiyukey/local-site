@@ -1,4 +1,6 @@
 node_modules/
 views/
 .idea/
-public/
+node/api/test/
+public/root/html/test/
+public/root/media/test/

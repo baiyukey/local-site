@@ -3,8 +3,8 @@
  */
 module.exports={
   'hostname':'localhost',
-  'port':2999,
-  'templateDir':'D:/www/node/public/byAdmin/template/',
-  'mediaDir':'D:/www/node/public/byAdmin/',
-  'apiDir':'D:/www/node/api/'
+  'port':999,
+  'templateDir':'D:/www/node/public/root/html/',//html目录
+  'mediaDir':'D:/www/node/public/root/',//js,css目录
+  'apiDir':'D:/www/node/api/'//后台程序,api接口目录
 };

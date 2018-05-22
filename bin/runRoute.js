@@ -1,20 +1,20 @@
 /**
  * Created by baiyu on 2016/1/14.
  */
-var path=require('path');
-var url=require("url");
-var fs=require("fs");
-var config=require("./config");
+let path=require('path');
+let url=require("url");
+let fs=require("fs");
+let config=require("./config");
 module.exports=function(req,res){
   console.log(url.parse(req.url).path.toString());
-  var moduleName=url.parse(req.url).path;
+  let moduleName=url.parse(req.url).path;
   moduleName=moduleName.substr(-1)==="/" ?  moduleName.substr(0,moduleName.length-1)+"index" : moduleName;
   console.log(moduleName);
   moduleName='..'+moduleName;
-  var requireBack=function(has){
+  let requireBack=function(has){
     console.log(has);
     if(has){
-      var thisModule=require(moduleName);
+      let thisModule=require(moduleName);
       thisModule(req,res);
     }
     else{
