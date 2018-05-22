@@ -2,22 +2,22 @@
  * Created by baiyu on 2016/1/13.
  */
 function run(){
-  var http=require('http');
-  var url=require('url');
-  var path=require('path');
-  var config=require('./config');
-  var fs=require("fs");
-  var mime=require("mime");
-  var runRoute=require('./runRoute');
-  var createCallback=function(req,res){
-    var thisPath=config.templateDir+url.parse(req.url).pathname;
+  let http=require('http');
+  let url=require('url');
+  let path=require('path');
+  let config=require('./config');
+  let fs=require("fs");
+  let mime=require("mime");
+  let runRoute=require('./runRoute');
+  let createCallback=function(req,res){
+    let thisPath=config.templateDir+url.parse(req.url).pathname;
     if(url.parse(req.url).pathname.split("/")[1]==="media") thisPath=config.mediaDir+url.parse(req.url).pathname;
     //if(thisFile==="favicon.ico") return false;
-    var fileCheck=function(has){
+    let fileCheck=function(has){
       if(has){
-        var thisFile=path.basename(req.url);
-        var thisMime=mime.lookup(path.basename(thisFile).slice(1));
-        var readCallback=function(err,file){
+        let thisFile=path.basename(req.url);
+        let thisMime=mime.lookup(path.basename(thisFile).slice(1));
+        let readCallback=function(err,file){
           if(!err){
             res.writeHead(200,{"Content-Type":thisMime});
             res.write(file);
