@@ -45,6 +45,7 @@ function run(){
     fs.exists(thisPath,fileCheck);
   };
   http.createServer(createCallback).listen(config.port,config.hostname);
-  console.log("NWS is open! \nclick this test link: \n"+"http://"+"localhost:"+config.port+"/helloWorld.html");
+  console.clear();
+  console.log("NWS is open! \nclick this test link: \n"+"http://"+"localhost:"+config.port+"/helloWorld.html"+"\npress ctrl+c to stop NWS.");
 }
 exports.run=run;
