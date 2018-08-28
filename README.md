@@ -1,5 +1,7 @@
 # local-site
 create a new local Web site<br>
+##### NPM install 安装命令
+npm i --save local-site@latest<br>
 ##### 启动web服务命令:
 let service=require("local-site");<br>
 service.run();
