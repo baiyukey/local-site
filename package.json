@@ -1,9 +1,8 @@
 {
-  "name": "node",
-  "version": "0.0.0",
-  "private": true,
+  "name": "local-site",
+  "version": "0.0.1",
   "scripts": {
-    "nws": "node nws"
+    "local-site": "node local-site"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -13,6 +12,30 @@
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
-    "mime":"~1.4.1"
-  }
+    "mime": "~1.4.1"
+  },
+  "description": "local site service\r ##### 启动web服务命令:\r npm run local-site<br>\r ##### 程序文件:\r api/.. (http://localhost:port/..)<br>\r ##### 静态文件目录:\r test/webFile.. (http://localhost:port/..)<br>\r test/webFile/html/.. (http://localhost:port/..)<br>\r test/webFile/media/.. (http://localhost:port/media/..)<br>",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baiyukey/local-site.git"
+  },
+  "keywords": [
+    "iis",
+    "localhost",
+    "local",
+    "site",
+    "service",
+    "server"
+  ],
+  "author": "baiyukey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baiyukey/local-site/issues"
+  },
+  "homepage": "https://github.com/baiyukey/local-site#readme"
 }
