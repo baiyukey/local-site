@@ -1,6 +1,6 @@
 {
   "name": "local-site",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "scripts": {
     "local-site": "node local-site"
   },
