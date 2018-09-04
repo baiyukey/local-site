@@ -10,7 +10,7 @@ module.exports={<br>
   'port':999,<br>
   //以下目录相对于启动web服务命令所在文件灵活调整<br>
   'templateDir':'./test/webFile/html/',//(http://localhost:port/..)html目录<br>
-  'mediaDir':'./test/webFile/',//(http://localhost:port/media/..)js,css目录<br>
+  'mediaDir':'./test/webFile/media/',//(http://localhost:port/media/..)js,css目录<br>
   'apiDir':'./api/'//(http://localhost:port/..)后台程序,api接口目录<br>
 };<br>
 ##### 启动web服务命令:
