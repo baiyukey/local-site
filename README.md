@@ -2,7 +2,7 @@
 创建一个本地web站点服务<br>
 create a new local Web site<br>
 ##### NPM install 安装命令
-npm i --save local-site@latest<br>
+npm i local-site<br>
 ##### 配置文件:
 lib/config.js<br>
 module.exports={<br>
