@@ -1,29 +1,53 @@
 {
-  "name": "local-site",
-  "version": "0.0.10",
-  "scripts": {
-    "local-site": "node local-site"
+  "_from": "local-site",
+  "_id": "local-site@0.0.10",
+  "_inBundle": false,
+  "_integrity": "sha512-1/9SpVLsxeaDXIO81YBWkCP9+dkFbDugqM1GoGzy907t43i8u3Ec475Ni8wN/AY4LNbWmmdIYT8zjhD8/mQsTQ==",
+  "_location": "/local-site",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "local-site",
+    "name": "local-site",
+    "escapedName": "local-site",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/local-site/-/local-site-0.0.10.tgz",
+  "_shasum": "bfdce6251587f7f24c84e030198f97d0ae3eb887",
+  "_spec": "local-site",
+  "_where": "D:\\www\\qssec",
+  "author": {
+    "name": "baiyukey"
+  },
+  "bugs": {
+    "url": "https://github.com/baiyukey/local-site/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "body-parser": "~1.13.2",
     "cookie-parser": "~1.3.5",
     "debug": "~2.6.9",
     "express": "~4.13.1",
+    "http-proxy": "~1.17.0",
     "jade": "~1.11.0",
+    "mime": "~1.4.1",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0",
-    "mime": "~1.4.1"
+    "serve-favicon": "~2.3.0"
   },
+  "deprecated": false,
   "description": "local site service\r ##### 启动web服务命令:\r npm run local-site<br>\r ##### 程序文件:\r api/.. (http://localhost:port/..)<br>\r ##### 静态文件目录:\r test/webFile.. (http://localhost:port/..)<br>\r test/webFile/html/.. (http://localhost:port/..)<br>\r test/webFile/media/.. (http://localhost:port/media/..)<br>",
-  "main": "index.js",
   "directories": {
     "lib": "lib",
     "test": "test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/baiyukey/local-site.git"
-  },
+  "homepage": "https://github.com/baiyukey/local-site#readme",
   "keywords": [
     "iis",
     "localhost",
@@ -32,10 +56,15 @@
     "service",
     "server"
   ],
-  "author": "baiyukey",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/baiyukey/local-site/issues"
+  "main": "index.js",
+  "name": "local-site",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baiyukey/local-site.git"
   },
-  "homepage": "https://github.com/baiyukey/local-site#readme"
+  "scripts": {
+    "local-site": "node local-site"
+  },
+  "version": "0.0.11"
 }
