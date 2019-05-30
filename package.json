@@ -66,5 +66,5 @@
   "scripts": {
     "local-site": "node local-site"
   },
-  "version": "0.1.01"
+  "version": "0.2.01"
 }
