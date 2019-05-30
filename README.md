@@ -1,8 +1,8 @@
 # local-site<br>
 创建一个本地web站点服务（create a new local Web site）
-##### NPM install 安装命令
+##### ★ NPM install 安装命令
 npm i local-site<br><br>
-##### 配置文件(lib/config.js):
+##### ★ 配置文件(lib/config.js):
 module.exports={<br>
   'hostname':'localhost',//主机名<br>
     'port':999,//http协议服务端口<br>
@@ -15,7 +15,7 @@ module.exports={<br>
     'mediaDir':'../../qssystem/',//根目录,用于存放js,css目录<br>
     'templateDir':'../../qssystem/template/',//根目录,用于存放html文件<br>
     'apiDir':'./api/',//后台程序,api接口目录<br>
-    'apiTarget':'http\:\/\/10.10.10.34:8888'\, //Create an HTTP proxy server with an HTTP target<br>
+    'apiTarget':'http:/\/10.10.10.34:8888'\, //Create an HTTP proxy server with an HTTP target<br>
     /\*'apiTarget':{//Create an HTTP proxy server with an HTTPS target<br>
      protocol: 'https:',<br>
      host: 'my-domain-name',<br>
@@ -25,6 +25,16 @@ module.exports={<br>
      },\*/<br>
     'apiLogShow':false<br>
   }<br><br>
-##### 启动web服务命令:
+##### ★ 实例方法启动web服务命令:
 let service=require("local-site");<br>
 service.run();<br>
+##### ★ NPM启动local-site:
+npm run local-site
+##### ★ NPM启动成功信息:
+local-site is running!<br>
+click this test link:<br>
+http:/\/localhost:999/helloWorld.html<br>
+https:/\/localhost:9999/helloWorld.html<br>
+press ctrl+c to stop local-site.<br>
+
+
