@@ -15,7 +15,7 @@ module.exports={<br>
     'mediaDir':'../../qssystem/',//根目录,用于存放js,css目录<br>
     'templateDir':'../../qssystem/template/',//根目录,用于存放html文件<br>
     'apiDir':'./api/',//后台程序,api接口目录<br>
-    'apiTarget':'http:\/\/10.10.10.34:8888',\/\/Create an HTTP proxy server with an HTTP target<br>
+    'apiTarget':'http\:\/\/10.10.10.34:8888'\, //Create an HTTP proxy server with an HTTP target<br>
     /\*'apiTarget':{//Create an HTTP proxy server with an HTTPS target<br>
      protocol: 'https:',<br>
      host: 'my-domain-name',<br>
