@@ -28,7 +28,7 @@ module.exports={<br>
 ##### ★ 实例方法启动web服务命令:
 let service=require("local-site");<br>
 service.run();<br>
-##### ★ NPM启动local-site:
+##### ★ NPM启动local-site（node_modules/local-site目录下）:
 npm run local-site
 ##### ★ NPM启动成功信息:
 local-site is running!<br>
