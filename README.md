@@ -1,6 +1,8 @@
 # local-site<br>
 创建一个本地web站点服务（create a new local Web site）
 ##### ★ NPM install 安装命令
+npm i https://github.com/baiyukey/local-site.git<br>
+或者：<br>
 npm i local-site<br><br>
 ##### ★ 配置文件(lib/config.js):
 module.exports={<br>
