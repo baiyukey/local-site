@@ -46,7 +46,7 @@ local-site is running!<br>
 click this test link:<br>
 http:/\/localhost:621/helloWorld.html<br>
 https:/\/localhost:1978/helloWorld.html<br>
-../../root/media/user/下的css/、js/目录已开启自动压缩混淆功能。（请确保您的计算机安装了java，处理css文档需要它。）<br>
+./test/webFile/media/下的css/、js/目录已开启自动压缩混淆功能。（请确保您的计算机安装了java，处理css文档需要它。）<br>
 press ctrl+c to stop local-site.<br>
 
 
