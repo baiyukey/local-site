@@ -1,6 +1,6 @@
 {
   "_from": "git+https://github.com/baiyukey/local-site.git",
-  "_id": "local-site@0.3.00",
+  "_id": "local-site@0.3.1",
   "_inBundle": false,
   "_integrity": "",
   "_location": "/local-site",
@@ -39,7 +39,7 @@
     "#USER",
     "/"
   ],
-  "_resolved": "git+https://github.com/baiyukey/local-site.git#fb9c72b8c11332c84e573f2baf527f62a316272e",
+  "_resolved": "git+https://github.com/baiyukey/local-site.git#f2e233fc314cf280d0fda7a824b3a41550b30cdb",
   "_shasum": "bfdce6251587f7f24c84e030198f97d0ae3eb887",
   "_spec": "https://github.com/baiyukey/local-site.git",
   "_where": "D:\\www\\qssec\\node_modules",
@@ -51,17 +51,25 @@
   },
   "bundleDependencies": false,
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.5.0",
     "body-parser": "^1.19.0",
     "cookie-parser": "~1.3.5",
     "debug": "~2.6.9",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
+    "http": "0.0.0",
     "http-proxy": "~1.17.0",
+    "https": "^1.0.0",
     "jade": "~1.11.0",
     "mime": "~1.4.1",
     "morgan": "^1.9.1",
+    "path": "^0.12.7",
     "serve-favicon": "^2.5.0",
     "uglify-es": "^3.3.9",
+    "url": "^0.11.0",
     "watch": "^1.0.2",
     "yuicompressor": "^2.4.8"
   },
@@ -90,5 +98,6 @@
   "scripts": {
     "local-site": "node local-site"
   },
-  "version": "0.3.00"
+  "version": "0.3.1",
+  "devDependencies": {}
 }
