@@ -7,9 +7,9 @@ npm i local-site<br>
 安装完成后进入local-site目录执行：<br>
 npm install<br><br>
 ##### ★ 配置文件(lib/config.js):<br>
-let rootDir="./test/webFile/";//第一个根目录(该目录的赋值是相对于local-site模块的地址)<br>
-let htmlDir=rootDir+"html/";//第二个根目录，建议只存放html文件，访问网址为“/”，可选项<br>
-let mediaDir=rootDir+"media/";//资源目录，用于存放其它文件，访问网址固化为“/media/...”，不能放在hrmlDir目录下，可选项<br>
+let rootDir="./test/webFile/";//非根目录，仅是一个变量，为local-site模块的地址与网站项目的相对目录<br>
+let htmlDir=rootDir+"html/";//网站根目录，访问网址为“/”，必选项<br>
+let mediaDir=rootDir+"media/";//资源目录，可以不在根目录下，但是可以通过“/media/...”访问，可选项<br>
 module.exports={<br>
   'hostname':'localhost',//主机名<br>
     'port':621,//http协议服务端口<br>
