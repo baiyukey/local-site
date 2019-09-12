@@ -1,6 +1,6 @@
 {
   "_from": "git+https://github.com/baiyukey/local-site.git",
-  "_id": "local-site@0.3.2",
+  "_id": "local-site@0.3.3",
   "_inBundle": false,
   "_integrity": "",
   "_location": "/local-site",
@@ -39,18 +39,18 @@
     "#USER",
     "/"
   ],
-  "_resolved": "git+https://github.com/baiyukey/local-site.git#f2e233fc314cf280d0fda7a824b3a41550b30cdb",
+  "_resolved": "git+https://github.com/baiyukey/local-site.git#d9422086b588bf8e93edfd3cbcfa6c7c9fff4bc7",
   "_shasum": "bfdce6251587f7f24c84e030198f97d0ae3eb887",
   "_spec": "https://github.com/baiyukey/local-site.git",
-  "_where": "D:\\www\\qssec\\node_modules",
   "author": {
     "name": "baiyukey"
   },
   "bugs": {
     "url": "https://github.com/baiyukey/local-site/issues"
   },
-  "bundleDependencies": false,
+  "bundleDependencies": [],
   "dependencies": {
+    "watch": "latest",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-remove-strict-mode": "0.0.2",
     "babel-preset-es2015": "^6.24.1",
@@ -59,22 +59,22 @@
     "cookie-parser": "~1.3.5",
     "debug": "~2.6.9",
     "express": "^4.17.1",
-    "fs": "0.0.1-security",
+    "fs": "latest",
     "http": "0.0.0",
     "http-proxy": "~1.17.0",
     "https": "^1.0.0",
     "jade": "~1.11.0",
-    "mime": "~1.4.1",
+    "mime": "latest",
     "morgan": "^1.9.1",
     "path": "^0.12.7",
     "serve-favicon": "^2.5.0",
     "uglify-es": "^3.3.9",
     "url": "^0.11.0",
-    "watch": "^1.0.2",
     "yuicompressor": "^2.4.8"
   },
   "deprecated": false,
   "description": "local site service\r ##### 启动web服务命令:\r npm run local-site<br>\r ##### 程序文件:\r api/.. (http://localhost:port/..)<br>\r ##### 静态文件目录:\r test/webFile.. (http://localhost:port/..)<br>\r test/webFile/html/.. (http://localhost:port/..)<br>\r test/webFile/media/.. (http://localhost:port/media/..)<br>",
+  "devDependencies": {},
   "directories": {
     "lib": "lib",
     "test": "test"
@@ -98,6 +98,5 @@
   "scripts": {
     "local-site": "node local-site"
   },
-  "version": "0.3.2",
-  "devDependencies": {}
+  "version": "0.3.3"
 }
