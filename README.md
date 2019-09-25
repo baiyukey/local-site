@@ -7,7 +7,7 @@ npm i local-site<br>
 安装完成后进入local-site目录执行：<br>
 npm install<br><br>
 ##### ★ 配置文件(lib/config.js):<br>
-let root="./test/webFile/";//项目目录,访问网址为“/”，也是根目录<br>
+let root="./test/webFile/";//项目目录,访问网址为“/”，即根目录，必选项<br>
 let virtualRoot=root+"html/";//虚拟根目录，访问网址为“/”，必选项<br>
 module.exports={<br>
 &nbsp;'hostname':'localhost',//主机名，也可以设置成本机的IP地址，默认localhost<br>
@@ -29,7 +29,7 @@ module.exports={<br>
 &nbsp;&nbsp;'watchDir':root+"media/",//监视目录下的js/,css/目录文件发生变化时自动压缩混淆到js.min/、css.min/目录<br>
 &nbsp;&nbsp;'babel':true//是否将ES6或更高规范的js代码转为ES5规范，默认false,即不转换<br>
 &nbsp;},<br>
-&nbsp;'elfFrame':{//暂未开放<br>
+&nbsp;'elfFrame':{<br>
 &nbsp;&nbsp;'enable':false,//是否对elfFrame的支持,当为true时，在watchDir中创建html文件时会在uglifyJsCss.watchDir下的js/、css/目录中创建对应的文件,默认false,即不支持,想了解elfFrame？点击：http://www.uiElf.com/elfFrame/<br>
 &nbsp;&nbsp;'watchDir':virtualRoot//服务监视目录<br>
 &nbsp;},<br>
@@ -54,11 +54,14 @@ node service
 ##### ★ NPM启动local-site（node_modules/local-site目录下）:
 npm run local-site
 ##### ★ local-site启动成功信息:
-local-site is running!<br>
-click this test link:<br>
+local-site build success!<br>
+code link<br>
+https://github.com/baiyukey/local-site.git<br>
+...welcome page:<br>
 http:/\/localhost:621/i.html<br>
 https:/\/localhost:1978/i.html<br>
-./test/webFile/media/下的css/、js/目录已开启自动压缩混淆功能。（请确保您的计算机安装了java，处理css文档需要它。）<br>
+...
+...
 press ctrl+c to stop local-site.<br>
 
 

@@ -1,6 +1,6 @@
 {
   "_from": "git+https://github.com/baiyukey/local-site.git",
-  "_id": "local-site@0.3.3",
+  "_id": "local-site@0.3.4",
   "_inBundle": false,
   "_integrity": "",
   "_location": "/local-site",
@@ -73,7 +73,7 @@
     "yuicompressor": "^2.4.8"
   },
   "deprecated": false,
-  "description": "local site service\r ##### 启动web服务命令:\r npm run local-site<br>\r ##### 程序文件:\r api/.. (http://localhost:port/..)<br>\r ##### 静态文件目录:\r test/webFile.. (http://localhost:port/..)<br>\r test/webFile/html/.. (http://localhost:port/..)<br>\r test/webFile/media/.. (http://localhost:port/media/..)<br>",
+  "description": "local site service",
   "devDependencies": {},
   "directories": {
     "lib": "lib",
@@ -98,5 +98,5 @@
   "scripts": {
     "local-site": "node local-site"
   },
-  "version": "0.3.3"
+  "version": "0.3.4"
 }
