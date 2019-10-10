@@ -1,6 +1,6 @@
 {
   "_from": "git+https://github.com/baiyukey/local-site.git",
-  "_id": "local-site@0.3.4",
+  "_id": "local-site@0.3.5",
   "_inBundle": false,
   "_integrity": "",
   "_location": "/local-site",
@@ -98,5 +98,5 @@
   "scripts": {
     "local-site": "node local-site"
   },
-  "version": "0.3.4"
+  "version": "0.3.5"
 }
