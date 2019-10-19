@@ -1,12 +1,16 @@
 # local-site<br>
 创建一个本地web站点服务（create a new local Web site）
 ##### ★ 安装 ( 注意！如果要升级local-site，请先备份local-site/lib/config.js文档。)
-npm i https://github.com/baiyukey/local-site.git  (推荐,持续更新中)<br>
-或者：<br>
-npm i local-site<br>
-安装完成后进入local-site目录执行：<br>
-npm install<br><br>
-##### ★ 配置文件(lib/config.js):<br>
+方法一 (推荐,持续更新中):<br>
+ ❶ 进入项目目录:<br>
+   git init<br>
+ ❷ 项目目录克隆local-site:<br>
+   git clone https://github.com/baiyukey/local-site.git<br>
+ ❸ 进入local-site目录安装依赖包:<br>
+   npm install<br>
+方法二：<br>
+  npm i local-site<br>
+##### ★ 配置文件(local-site/lib/config.js):<br>
 let root="./test/webFile/";//项目目录,访问网址为“/”，即根目录，必选项<br>
 let virtualRoot=root+"html/";//虚拟根目录，访问网址为“/”，必选项<br>
 module.exports={<br>
