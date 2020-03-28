@@ -51,19 +51,31 @@ module.exports={<br>
 &nbsp;}<br>
 };<br><br>
 ##### ★ 实例方法启动web服务命令:
-let service=require("local-site");<br>
-service.run();<br>
-##### ★ node启动local-site（local-site目录下）:
-node service
-##### ★ NPM启动local-site（node_modules/local-site目录下）:
-npm run local-site
-##### ★ local-site启动成功信息:
+let localSite=require("local-site");<br>
+localSite.run();<br>
+##### ★ NPM方式启动local-site（local-site目录下）:
+npm run  service
+##### local-site启动成功信息:
 local-site build success!<br>
 code link<br>
 https://github.com/baiyukey/local-site.git<br>
 ...welcome page:<br>
 http:/\/localhost:621/i.html<br>
 https:/\/localhost:1978/i.html<br>
+...
+...
+press ctrl+c to stop local-site.<br><br>
+
+##### ★ 实例方法启动minify命令:
+let minifyProject=require("local-site/lib/minifyProject.js");<br>
+minifyProject.run();<br>
+
+##### ★ NPM方式启动local-site的JS和CSS压缩工具（local-site目录下）:
+npm run minify
+##### local-site minify工具成功开启显示信息:
+local-site minify is ready...<br>
+code link<br>
+https://github.com/baiyukey/local-site.git<br>
 ...
 ...
 press ctrl+c to stop local-site.<br>
