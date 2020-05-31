@@ -1,15 +1,53 @@
 # local-site<br>
 创建一个本地web站点服务（create a new local Web site）
 ##### ★ 安装 ( 注意！如果要升级local-site，请先备份local-site/lib/config.js文档。)
-方法一 (推荐,持续更新中):<br>
- ❶ 进入项目目录:<br>
-   git init<br>
- ❷ 项目目录克隆local-site:<br>
+方法一，NPM方式 (推荐)：<br>
+   npm i local-site<br>
+方法二，github克隆方式 :<br>
    git clone https://github.com/baiyukey/local-site.git<br>
- ❸ 进入local-site目录安装依赖包:<br>
-   npm install<br>
-方法二：<br>
-  npm i local-site<br>
+   
+##### ★ 启动local-site :
+如果采用了NPM安装方式，local-site在node_modules下，<br>
+如果采用了项目克隆安装方式，node_modules在local-site目录下,<br>
+不论何种方式，都不影响程序运行启动，需要注意的是在不同的目录下命令稍有不同。<br>
+  npm run service  (local-site目录下)<br>
+或者<br>
+  node . -service  (local-site目录下)<br>
+或者<br>
+  node local-site -service (node_modules目录下)<br>
+
+##### ★ 实例方法启动web服务命令:
+let localSite=require("local-site");<br>
+localSite.run();<br>
+
+##### ★ local-site启动成功信息:
+local-site build success!<br>
+code link<br>
+https://github.com/baiyukey/local-site.git<br>
+...welcome page:<br>
+http:/\/localhost:621/i.html<br>
+https:/\/localhost:1978/i.html<br>
+...
+...
+press ctrl+c to stop local-site.<br><br>
+
+##### ★ 启动minify命令:
+在config.js中如果将uglifyJsCss置为了false,即不是实时对代码进行编码，可以在后期上线前统一编码，可用如下命令。<br>
+npm run minify  (local-site目录下)<br>
+或者：<br>
+node local-site -minify  (node_modules目录下)<br>
+也可以用实例方法执行：<br>
+let minifyProject=require("local-site/lib/minifyProject.js");<br>
+minifyProject.run();<br>
+<br>
+minify工具成功开启显示信息:
+local-site minify is ready...<br>
+code link<br>
+https://github.com/baiyukey/local-site.git<br>
+...
+...
+press ctrl+c to stop local-site.<br>
+
 ##### ★ 配置文件(local-site/lib/config.js):<br>
 let root="./test/webFile/";//项目目录,访问网址为“/”，即根目录，必选项<br>
 let virtualRoot=root+"html/";//虚拟根目录，访问网址为“/”，必选项<br>
@@ -50,34 +88,5 @@ module.exports={<br>
 &nbsp;'logShow':false//是否显示代理请求日志<br>
 &nbsp;}<br>
 };<br><br>
-##### ★ 实例方法启动web服务命令:
-let localSite=require("local-site");<br>
-localSite.run();<br>
-##### ★ NPM方式启动local-site（local-site目录下）:
-npm run  service
-##### local-site启动成功信息:
-local-site build success!<br>
-code link<br>
-https://github.com/baiyukey/local-site.git<br>
-...welcome page:<br>
-http:/\/localhost:621/i.html<br>
-https:/\/localhost:1978/i.html<br>
-...
-...
-press ctrl+c to stop local-site.<br><br>
-
-##### ★ 实例方法启动minify命令:
-let minifyProject=require("local-site/lib/minifyProject.js");<br>
-minifyProject.run();<br>
-
-##### ★ NPM方式启动local-site的JS和CSS压缩工具（local-site目录下）:
-npm run minify
-##### local-site minify工具成功开启显示信息:
-local-site minify is ready...<br>
-code link<br>
-https://github.com/baiyukey/local-site.git<br>
-...
-...
-press ctrl+c to stop local-site.<br>
 
 

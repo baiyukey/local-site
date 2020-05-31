@@ -93,12 +93,12 @@
   "name":"local-site",
   "repository":{
     "type":"git",
-    "url":"git+https://github.com/baiyukey/local-site.git"
+    "url":"https://github.com/baiyukey/local-site.git"
   },
   "scripts":{
-    "service":"node index -service",
-    "minify":"node index -minify",
+    "service":"node . -service",
+    "minify":"node . -minify",
     "_comment":"npm run service"
   },
-  "version":"0.3.5"
+  "version":"0.3.7"
 }
