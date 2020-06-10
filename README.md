@@ -1,5 +1,5 @@
 # local-site<br>
-创建一个本地web站点服务（create a new local Web site）
+创建一个本地web站点服务,可一键实现测试服务，代理服务，代码压缩丑化服务等功能。
 ##### ★ 安装 ( 注意！如果要升级local-site，请先备份local-site/lib/config.js文档。)
 方法一，NPM方式 (推荐)：<br>
    npm i local-site<br>
