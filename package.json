@@ -1,56 +1,36 @@
 {
-  "_from":"git+https://github.com/baiyukey/local-site.git",
-  "_id":"local-site@0.3.6",
+  "_from":"local-site",
+  "_id":"local-site@0.4.1",
   "_inBundle":false,
-  "_integrity":"",
+  "_integrity":"sha512-Coz/8uSMpb29G7ZG9WNG3/L+nKV6oxIqOpKY9SqvgKukhaqB/TxGDk6QOoalHbBiGqotQhCsMKUAywhscIEeLg==",
   "_location":"/local-site",
-  "_phantomChildren":{
-    "array-flatten":"1.1.1",
-    "content-type":"1.0.4",
-    "cookie-signature":"1.0.6",
-    "debug":"2.6.9",
-    "destroy":"1.0.4",
-    "encodeurl":"1.0.2",
-    "escape-html":"1.0.3",
-    "forwarded":"0.1.2",
-    "inherits":"2.0.3",
-    "media-typer":"0.3.0",
-    "merge-descriptors":"1.0.1",
-    "methods":"1.1.2",
-    "on-finished":"2.3.0",
-    "on-headers":"1.0.1",
-    "path-to-regexp":"0.1.7",
-    "safe-buffer":"5.1.2",
-    "safer-buffer":"2.1.2",
-    "setprototypeof":"1.1.1",
-    "statuses":"1.5.0",
-    "toidentifier":"1.0.0",
-    "unpipe":"1.0.0"
-  },
+  "_phantomChildren":{},
   "_requested":{
-    "type":"git",
-    "raw":"https://github.com/baiyukey/local-site.git",
-    "rawSpec":"https://github.com/baiyukey/local-site.git",
-    "saveSpec":"git+https://github.com/baiyukey/local-site.git",
-    "fetchSpec":"https://github.com/baiyukey/local-site.git",
-    "gitCommittish":null
+    "type":"tag",
+    "registry":true,
+    "raw":"local-site",
+    "name":"local-site",
+    "escapedName":"local-site",
+    "rawSpec":"",
+    "saveSpec":null,
+    "fetchSpec":"latest"
   },
   "_requiredBy":[
     "#USER",
     "/"
   ],
-  "_resolved":"git+https://github.com/baiyukey/local-site.git#d9422086b588bf8e93edfd3cbcfa6c7c9fff4bc7",
-  "_shasum":"bfdce6251587f7f24c84e030198f97d0ae3eb887",
-  "_spec":"https://github.com/baiyukey/local-site.git",
+  "_resolved":"https://registry.npmjs.org/local-site/-/local-site-0.4.1.tgz",
+  "_shasum":"b8724b664110e57c1ecebb7f7128c93e0204ff51",
+  "_spec":"local-site",
+  "_where":"D:\\www\\local-site",
   "author":{
     "name":"baiyukey"
   },
   "bugs":{
     "url":"https://github.com/baiyukey/local-site/issues"
   },
-  "bundleDependencies":[],
+  "bundleDependencies":false,
   "dependencies":{
-    "watch":"latest",
     "babel-core":"^6.26.3",
     "babel-plugin-transform-remove-strict-mode":"0.0.2",
     "babel-preset-es2015":"^6.24.1",
@@ -70,6 +50,7 @@
     "serve-favicon":"^2.5.0",
     "uglify-es":"^3.3.9",
     "url":"^0.11.0",
+    "watch":"latest",
     "yuicompressor":"^2.4.8"
   },
   "deprecated":false,
@@ -93,12 +74,12 @@
   "name":"local-site",
   "repository":{
     "type":"git",
-    "url":"https://github.com/baiyukey/local-site.git"
+    "url":"git+https://github.com/baiyukey/local-site.git"
   },
   "scripts":{
-    "service":"node . -service",
+    "_comment":"npm run service",
     "minify":"node . -minify",
-    "_comment":"npm run service"
+    "service":"node . -service"
   },
-  "version":"0.3.7"
+  "version":"0.4.2"
 }
