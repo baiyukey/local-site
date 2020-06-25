@@ -49,7 +49,7 @@ https://github.com/baiyukey/local-site.git<br>
 press ctrl+c to stop local-site.<br>
 
 ##### ★ 配置文件(local-site/lib/config.js):<br>
-let root="./test/webFile/";//项目目录,访问网址为“/”，即根目录，必选项<br>
+let root="D:/www/local-site/test/webFile/";//项目目录,访问网址为“/”，即根目录，必选项<br>
 let virtualRoot=root+"html/";//虚拟根目录，访问网址为“/”，必选项<br>
 module.exports={<br>
 &nbsp;'hostname':'localhost',//主机名，也可以设置成本机的IP地址，默认localhost<br>
