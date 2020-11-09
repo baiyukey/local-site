@@ -1,2 +1,28 @@
-body{display:block;}
-*{box-sizing:border-box;padding:0;margin:0}
+body{
+  display:block;
+  font-family:微软雅黑, sans-serif;
+  font-size:2rem;
+  text-align:center;
+  color:#CFCFCF;
+  background-color:#333333;
+  }
+*{
+  box-sizing:border-box;
+  padding:0;
+  margin:0
+  }
+.mgt_50{
+  margin-top:-908px;
+  position:relative;
+  z-index:2;
+  }
+.font16{
+  font-size:1rem;
+  margin-top:787px;
+  }
+a{
+  text-decoration-line:none;
+  color:#CFCFCF;
+  line-height:1.5em;
+  border-bottom:1px solid #CFCFCF;
+  }

@@ -1,6 +1,7 @@
 {
+  "type": "module",
   "_from": "local-site",
-  "_id": "local-site@0.4.8",
+  "_id": "local-site@0.5.01",
   "_inBundle": false,
   "_integrity": "sha512-Coz/8uSMpb29G7ZG9WNG3/L+nKV6oxIqOpKY9SqvgKukhaqB/TxGDk6QOoalHbBiGqotQhCsMKUAywhscIEeLg==",
   "_location": "/local-site",
@@ -19,7 +20,7 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/local-site/-/local-site-0.4.8.tgz",
+  "_resolved": "https://registry.npmjs.org/local-site/-/local-site-0.5.0.tgz",
   "_shasum": "b8724b664110e57c1ecebb7f7128c93e0204ff51",
   "_spec": "local-site",
   "_where": "D:\\www\\local-site",
@@ -81,5 +82,5 @@
     "minify": "node . -minify",
     "service": "node . -service"
   },
-  "version": "0.4.8"
+  "version": "0.5.0"
 }
