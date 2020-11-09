@@ -1,6 +1,7 @@
-let localSite=require("./lib/index.js");//local-site不在node_module中时
-let minifyProject=require("./lib/minifyProject.js");
-let arguments=process.argv.slice(2);
-if(arguments.length===0) console.log("您可选择的参数有：-service | -minify");
-else if (arguments[0]==="-service") localSite.run();//启动local-site服务
-else if(arguments[0]==="-minify") minifyProject.run();//整个项目强制minify
+import localSite from "./lib/index.js"
+import minifyProject from "./lib/minifyProject.js"
+
+let _arguments=process.argv.slice(2);
+if(_arguments.length===0) console.log("您可选择的参数有：-service | -minify");
+else if (_arguments[0]==="-service") localSite.run();//启动local-site服务
+else if(_arguments[0]==="-minify") minifyProject.run();//整个项目强制minify
