@@ -1,0 +1,5 @@
+$(function(){
+let pageInt=()=>{
+};
+pageInt();
+});
