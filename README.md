@@ -2,11 +2,11 @@
 创建一个本地web站点服务,可一键实现测试服务，代理服务，代码编译服务等功能。
 ##### ★ 安装 ( 注意！如果要升级local-site，请先备份local-site/lib/config.js文档。)
 方法一，NPM方式 (推荐)：
-```
+```Bash
 npm i local-site
 ```
 方法二，github克隆方式 :<br>
-```
+```Bash
 git clone https://github.com/baiyukey/local-site.git
 ```
    
@@ -15,22 +15,22 @@ git clone https://github.com/baiyukey/local-site.git
 如果采用了项目克隆安装方式，node_modules在local-site目录下,<br>
 不论何种方式，都不影响程序运行启动，需要注意的是在不同的目录下命令稍有不同。<br>
 local-site目录下执行
-```
+```Bash
 node . -service
 ```
 或者node_modules目录下执行:
-```
+```Bash
 node local-site -service
 ```
 
 ##### ★ 实例方法启动web服务命令:
-```
+```javascript
 let localSite=require("local-site");
 localSite.run();
 ```
 
 ##### ★ local-site启动成功信息:
-```
+```Bash
 local-site build success!
 root:d:/www/local-site/test/webFile
 code link:
@@ -45,22 +45,23 @@ press ctrl+c to stop local-site.
 
 ##### ★ 启动minify命令:
 在config.js中如果将uglifyJsCss置为了false,即不是实时对代码进行编码，可以在后期上线前统一编码，local-site目录下可用如下命令。
-```
+```Bash
 npm run minify
 ```
 或者，在node_modules目录下：
-```
+```Bash
 node local-site -minify
 ```
 
 也可以用实例方法执行：
-```
+```javascript
 let minifyProject=require("local-site/lib/minifyProject.js");
 minifyProject.run();
 ```
 
 minify工具成功开启显示信息:
-```local-site minify is ready...
+```Bash
+local-site minify is ready...
 code link: https://github.com/baiyukey/local-site.git
 ...
 ...
@@ -68,7 +69,7 @@ press ctrl+c to stop local-site.
 ```
 
 ##### ★ 配置文件(local-site/lib/config.js):<br>
-```
+```javascript
 let root="d:/www/local-site/test/webFile/";//项目目录,访问网址为“/”，也是根目录
 let virtualRoot=`${root}html/`;//虚拟根目录，访问网址为“/”，必选项
 export default {
