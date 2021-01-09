@@ -16,11 +16,11 @@ git clone https://github.com/baiyukey/local-site.git
 不论何种方式，都不影响程序运行启动，需要注意的是在不同的目录下命令稍有不同。<br>
 local-site目录下执行
 ```Bash
-node . -service
+node . -serve
 ```
 或者node_modules目录下执行:
 ```Bash
-node local-site -service
+node local-site -serve
 ```
 
 ##### ★ 实例方法启动web服务命令:
@@ -112,7 +112,9 @@ export default {
     'buildJsCss':0,
     'sourceDir':virtualRoot
   },
-  apiProxy:{//代理服务嚣配置，例如访问http://localhost:621/api/login时相当于向http://8.8.8.8:8888/api/login请求数据
+  apiProxy:{//代理服务嚣配置
+    //当URL地址为此目录时会向代理服务器请求，例如访问http://localhost:621/api/login时相当于向http://8.8.8.8:8888/api/login请求数据
+    // 如果接口为根目录，没有任何识别符，可以在接口地址前加"/.//"，watchUrl设置为："/.//"
     "watchUrl":"/api/",//当URL地址为此目录时会向代理服务器请求
     'target':'http://8.8.8.8:8888',//http目标服务嚣地址
     /*'target':':{//Create an HTTP proxy server with an HTTPS target

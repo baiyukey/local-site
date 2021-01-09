@@ -6,19 +6,20 @@ body{
   color:#CFCFCF;
   background-color:#333333;
   }
+img{height:500px;}
 *{
   box-sizing:border-box;
   padding:0;
   margin:0
   }
 .mgt_50{
-  margin-top:-908px;
+  margin-top:-500px;
   position:relative;
   z-index:2;
   }
 .font16{
   font-size:1rem;
-  margin-top:787px;
+  margin-top:420px;
   }
 a{
   text-decoration-line:none;
