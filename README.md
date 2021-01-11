@@ -105,9 +105,9 @@ export default {
   'html':{
     /**
      * @param {Number} [buildJsCss=[0(默认),1]]
-     * -buildJsCss=1时，在html文件的同级的js或css目录中创建关联的js或css文件，例如/a/b/index.html对应的js文件为 /a/b/js/index.js，css同理
-     * -buildJsCss=2时，在jsCss.sourceDir目录下的js或css目录关联，例如“/a/b/index.html”对应的js文件为"/media/js/a/b/index.js"，css同理
-     * -buildJsCss=0时，不建立文件关联
+     * -buildJsCss=1时，在html文件"同级的js或css目录"中创建关联文件，例如/a/b/index.html对应的js文件为 /a/b/js/index.js，css同理
+     * -buildJsCss=2时，在"jsCss.sourceDir目录下的js或css目录"中创建关联文件，例如“/a/b/index.html”对应的js文件为"/media/js/a/b/index.js"，css同理
+     * -buildJsCss=0时，不创建关联文件
      * @param {String} [sourceDir=virtualRoot] -服务监视目录
      */
     'buildJsCss':0,
