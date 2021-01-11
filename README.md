@@ -114,7 +114,7 @@ export default {
   },
   apiProxy:{//代理服务嚣配置
     //当URL地址为此目录时会向代理服务器请求，例如访问http://localhost:621/api/login时相当于向http://8.8.8.8:8888/api/login请求数据
-    // 如果接口为根目录，没有任何识别符，可以在接口地址前加"/.//"，watchUrl设置为："/.//"
+    // 如果接口为根目录，没有任何url识别符，可以在调用接口url前加"/.//"，watchUrl设置为："///"
     "watchUrl":"/api/",//当URL地址为此目录时会向代理服务器请求
     'target':'http://8.8.8.8:8888',//http目标服务嚣地址
     /*'target':':{//Create an HTTP proxy server with an HTTPS target
