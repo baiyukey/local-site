@@ -18,7 +18,7 @@ local-site目录下执行
 ```Bash
 node . -serve
 ```
-或者node_modules目录下执行:
+或者，在node_modules目录下执行:
 ```Bash
 node local-site -serve
 ```
@@ -44,7 +44,11 @@ press ctrl+c to stop local-site.
 ```
 
 ##### ★ 启动minify命令:
-在config.js中如果将uglifyJsCss置为了false,即不是实时对代码进行编码，可以在后期上线前统一编码，local-site目录下可用如下命令。
+在config.js中如果将uglifyJsCss置为了false,即不实时对代码进行压缩编码，可以在后期上线前统一编码，local-site目录下可用如下命令。
+```Bash
+node . -serve
+```
+或者：
 ```Bash
 npm run minify
 ```
@@ -91,6 +95,7 @@ export default {
      * @param {Boolean} [isUglify=true] -是否开启代码js,css文件的压缩功能，默认true，即开启
      * @param {Boolean} [isBabel=true] -是否将ES6或更高规范的js代码转为ES5规范，默认false,即不转换
      * @param {String} [extend=".min"] -编译输出的文件名追加字符，例如a.js编译后的文件名为a.min.js，如果不需要更改可以留空
+     * @param {Boolean} [useStrict=false] -true: 保留/注入严格模式，js代码头部添加'use strict'声明; false: 强制剔除严格模式 (宽松模式)
      * @param {String} [sourceDir=root+"media/"] -监视目录，为源文件目录，当其中的js、css文件发生变化时自动编译
      * @param {String} [exportDir=root+"media/"] -编译存储目录，为编译后的文件存储目录，编译后的文件会以.min.(js|css)为结尾
      * 如果sourceDir!=targetDir时，那么两个目录下的子目录树保持一致 例如/media/js/a/index.js输出为/media2/js/a/index.min.js
@@ -99,6 +104,7 @@ export default {
     'isUglify':true,
     'isBabel':true,
     'extend':'.min',
+    'useStrict': false,
     'sourceDir':`${root}media/`,
     'exportDir':`${root}media/`
   },
