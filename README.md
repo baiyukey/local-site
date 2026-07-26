@@ -1,4 +1,5 @@
-🚀 local-site
+<h2>🚀 local-site</h2>
+
 local-site 是一个轻量、极速且功能强大的本地 Web 站点服务工具。它不仅仅是一个静态服务器，更是一个集成了实时代理、代码压缩编译、双层路径加密防盗、以及自动化资源管理的前端构建工作流引擎。
 
 无论你是想快速启动一个本地测试服务，还是需要一套强大的工具来保护和打包你的前端产物，local-site 都能开箱即用。<br>
@@ -9,7 +10,7 @@ local-site 是一个轻量、极速且功能强大的本地 Web 站点服务工�
 🤖 自动化资源关联：新建 HTML 页面时，自动为你生成并关联同名或同路径的 JS 和 CSS 文件。<br>
 🔌 无缝 API 代理：轻松解决本地开发时的跨域问题，支持目标路径重写。<br>
 &nbsp;
-##### 📦 安装<br>
+<h3> 📦 安装  </h3>
 注意： 如果你要升级已有的 local-site，请务必先备份项目中的 lib/config.js 配置文件。<br>
 方法一，NPM方式 (推荐)：
 ```Bash
@@ -20,7 +21,7 @@ npm i local-site
 git clone https://github.com/baiyukey/local-site.git
 ```
 &nbsp;
-##### 🕹️ 快速启动<br>
+<h3> 🕹️ 快速启动</h3>
 如果采用了NPM安装方式，local-site在node_modules下，<br>
 如果采用了项目克隆安装方式，node_modules在local-site目录下,<br>
 不论何种方式，都不影响程序运行启动，需要注意的是在不同的目录下命令稍有不同。<br>
