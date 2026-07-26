@@ -1,4 +1,4 @@
-<h2>🚀 local-site</h2>
+## 🚀 local-site
 
 local-site 是一个轻量、极速且功能强大的本地 Web 站点服务工具。它不仅仅是一个静态服务器，更是一个集成了实时代理、代码压缩编译、双层路径加密防盗、以及自动化资源管理的前端构建工作流引擎。
 
@@ -10,36 +10,43 @@ local-site 是一个轻量、极速且功能强大的本地 Web 站点服务工�
 🤖 自动化资源关联：新建 HTML 页面时，自动为你生成并关联同名或同路径的 JS 和 CSS 文件。<br>
 🔌 无缝 API 代理：轻松解决本地开发时的跨域问题，支持目标路径重写。<br>
 &nbsp;
-<h3> 📦 安装  </h3>
-注意： 如果你要升级已有的 local-site，请务必先备份项目中的 lib/config.js 配置文件。<br>
-方法一，NPM方式 (推荐)：
+### 📦 安装  
+<b>【注意！】 如果你要升级已有的 local-site，请务必先备份项目中的 lib/config.js 配置文件。</b>
+#### 方法一，NPM方式 (推荐)：
+
 ```Bash
 npm i local-site
 ```
-方法二，github克隆方式 :<br>
+
+#### 方法二，github克隆方式 :<br>
 ```Bash
 git clone https://github.com/baiyukey/local-site.git
 ```
-&nbsp;
-<h3> 🕹️ 快速启动</h3>
+
+
+### 🕹️ 快速启动
 如果采用了NPM安装方式，local-site在node_modules下，<br>
 如果采用了项目克隆安装方式，node_modules在local-site目录下,<br>
 不论何种方式，都不影响程序运行启动，需要注意的是在不同的目录下命令稍有不同。<br>
 
-或者，在node_modules目录下执行:
+##### local-site目录下执行:
 ```Bash
 # 启动 Web 服务及实时监听
 node . -serve
 
-# 仅执行一次全量压缩构建 (不启动实时监听)
-npm run minify
-# 或者
+# 全量压缩加密并导出所有项目文件
 node . -minify
 ```
 
-##### ★ 如果你全局或局部安装了模块，也可以在代码中作为实例方法启动：
+##### 或者，在node_modules目录下执行:
+```Bash
+node local-site -serve
+```
+
+##### ★ 实例方法启动web服务命令:
+如果你全局或局部安装了模块，也可以在代码中作为实例方法启动：
 ```javascript
-let localSite=require("local-site");
+import * as localSite from "local-site";
 localSite.run();
 ```
 
@@ -63,8 +70,31 @@ localSite.run();
 
 ```
 
-&nbsp;
-##### ⚙️ 核心配置详解 (config.js)<br>
+##### ★ 启动minify命令:
+可以一次性压缩加密所有文件，local-site目录下可用如下命令，可把所有文件输出到与项目目录同级的某个文件夹。
+```Bash
+node . -minify
+```
+或者
+```Bash
+npm run minify
+```
+或者，在node_modules目录下：
+```Bash
+node local-site -minify
+```
+minify工具成功开启显示信息:
+```Bash
+local-site minify is ready...
+code link: [https://github.com/baiyukey/local-site.git](https://github.com/baiyukey/local-site.git)
+...
+...
+press ctrl+c to stop local-site.
+```
+
+
+### ⚙️ 核心配置详解 (config.js)
+
 local-site 的强大之处在于其高度可定制的配置文件。以下是最新版 config.js 的完整结构及注释说明：
 ```javascript
     const root = "d:/www/local-site/test/webFile/"; // 源码所在的项目根目录
@@ -75,11 +105,11 @@ local-site 的强大之处在于其高度可定制的配置文件。以下是最
       // ==========================================
       hostname: 'localhost',       // 主机名，也可设置为本机 IP
       port: 621,                   // HTTP 协议服务端口
-      defaultPage: ['index.html'], // 默认欢迎页
+      defaultPage: ['index.html'], // URL的默认页
       
       https: {
         enable: true,              // 是否开启 HTTPS 服务
-        port: 1978,                // HTTPS 协议端口号
+        port: 443,                // HTTPS 协议端口号
         key: './ssl/privatekey.pem', // 自动生成或手动指定的私钥路径
         cert: './ssl/certificate.pem'// 自动生成或手动指定的公钥路径
       },
@@ -132,8 +162,9 @@ local-site 的强大之处在于其高度可定制的配置文件。以下是最
       }
     };
 ```
-&nbsp;
-##### 🛡️ 深入理解：构建与双层加密引擎
+
+
+### 🛡️ 深入理解：构建与双层加密引擎
 
 local-site 拥有极其独特且强大的产物保护机制。开启 export.encrypt.enable 后，引擎将执行物理层与引用层的双重加密，确保你的项目既能被浏览器正常运行，又极难被他人直接盗用。
 <br>
@@ -149,7 +180,7 @@ local-site 拥有极其独特且强大的产物保护机制。开启 export.encr
 
     ③智能防误伤：你可以通过 encrypt.ignoreFileNames 设置白名单，防止第三方库（如 jquery.min.js）被错误加密，保证系统的绝对稳定。<br>
 
-✨ 深入理解：自动资源关联 (Auto-Assets)
+### ✨ 深入理解：自动资源关联 (Auto-Assets)
 
 前端开发中，新建页面的高频痛点是需要反复手动创建对应的 .js 和 .css 文件。local-site 提供了 autoAssetsIn 功能：<br>
     当你配置 autoAssetsIn: "."，并在监听目录中新建 about.html 时，引擎会静默为你创建：<br>
